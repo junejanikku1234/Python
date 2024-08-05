@@ -7,3 +7,6 @@ b = 12.7
 c = 2
 print(b+c)
 print(type(b+c))
+comp = 5+6j
+s = complex(input("Enter a complex num to multiply with: "))
+print(comp," multiplied by ",s,"is: ",comp*s)
