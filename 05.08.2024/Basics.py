@@ -6,3 +6,4 @@ print(6/3*2)
 b = 12.7
 c = 2
 print(b+c)
+print(type(b+c))
