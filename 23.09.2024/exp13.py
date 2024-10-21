@@ -34,6 +34,8 @@ stat_dict.setdefault("gender","male")
 print(stat_dict)
 add_to_dict(dynamic_dict)
 print(dynamic_dict)
+print("LUL")
+print(stat_dict)
 del dynamic_dict["apple"]
 print(dynamic_dict)
 dynamic_dict.clear()
