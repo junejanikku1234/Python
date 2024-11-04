@@ -26,15 +26,21 @@ class Person:
     def display(self):
         print(self.name, self._age, self.__gender, self.salary)
 
-obj1 = Person("Nipun",20,"Male",42000)
-obj1.display()
-obj1.set_age(69)
-obj1.set_gender("Female")
-obj1.display()
-print(obj1.get_name())
+obj1 = Person("Alice", 25, "Female", 35000)
+obj2 = Person("Bob", 32, "Male", 52000)
+obj3 = Person("Charlie", 28, "Male", 48000)
+obj4 = Person("Daisy", 22, "Female", 38000)
+obj5 = Person("Ethan", 30, "Male", 55000)
 
-obj1.name = "Random"        # works because its public access
-obj1.__gender = "Undefined" # doesn't change the value because its private
 obj1.display()
-obj1._Person__gender = "LOL" # works because we provided mangled name
-obj1.display()
+obj2.set_age(69)
+obj3.set_gender("Female")
+obj2.display()
+obj3.display()
+print(obj4.get_name())
+
+obj5.name = "Random"        # works because its public access
+obj5.__gender = "Undefined" # doesn't change the value because its private
+obj5.display()
+obj5._Person__gender = "LOL" # works because we provided mangled name
+obj5.display()
